@@ -1,0 +1,80 @@
+/* Resetando margens e padding padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container para limitar a largura */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Seção Principal */
+.main-content {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9em;
+}
