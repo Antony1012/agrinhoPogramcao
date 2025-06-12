@@ -4,62 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Grãos, Venenos e Notícias</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Raízes Urbana</title>
+  <style>
+    /* Resetando margens e padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Corpo da página */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212; /* Fundo escuro */
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #2c3e50; /* Escuro */
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #f39c12; /* Amarelo vibrante */
+    }
+
+    /* Navegação */
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: inline-flex;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f39c12; /* Amarelo */
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #2ecc71; /* Verde */
+    }
+
+    /* Seção principal */
+    section {
+      padding: 50px 0;
+      background-color: #1e1e1e;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #2c3e50;
+      padding: 15px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header>
-    <div class="container">
-      <h1>Informações sobre Grãos, Venenos e Notícias</h1>
-      <nav>
-        <ul>
-          <li><a href="#graos">Grãos</a></li>
-          <li><a href="#veneno">Venenos</a></li>
-          <li><a href="#noticias">Notícias</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Raízes Urbana</h1>
   </header>
 
-  <!-- Seção Grãos -->
-  <section id="graos" class="section">
-    <div class="container">
-      <h2>Grãos: Fundamentos e Benefícios</h2>
-      <p>Os grãos são uma das fontes mais importantes de nutrientes para os seres humanos. Eles fornecem carboidratos complexos, proteínas, fibras, vitaminas e minerais essenciais para o funcionamento do nosso corpo. Alguns exemplos incluem trigo, arroz, milho, soja e feijão.</p>
-      <p>Grãos como o arroz integral e a quinoa têm se destacado por suas propriedades nutricionais, sendo ricos em fibras e antioxidantes. Já o trigo, especialmente quando não refinado, é uma excelente fonte de fibras que ajudam na digestão.</p>
-      <p>Ainda assim, a agricultura moderna tem enfrentado desafios em relação à preservação do solo, uso de pesticidas e mudanças climáticas, o que impacta a produção de grãos em diversas partes do mundo.</p>
-    </div>
-  </section>
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
 
-  <!-- Seção Venenos -->
-  <section id="veneno" class="section">
-    <div class="container">
-      <h2>Venenos: Perigos e Prevenção</h2>
-      <p>Os venenos são substâncias tóxicas que, se ingeridas, injetadas ou absorvidas de alguma forma, podem causar danos severos ao organismo. Existem diferentes tipos de venenos, como os naturais (presentes em plantas e animais) e sintéticos (fabricados pelo homem).</p>
-      <p>Alguns venenos naturais, como o ricino, encontrado na planta de mamona, são extremamente potentes e podem ser fatais em pequenas quantidades. Outros venenos, como os presentes em serpentes e aranhas, são usados como mecanismo de defesa.</p>
-      <p>O uso excessivo de pesticidas e venenos em agricultura também tem gerado preocupações. A exposição a esses produtos pode afetar não só os trabalhadores, mas também os consumidores de alimentos contaminados.</p>
-    </div>
-  </section>
-
-  <!-- Seção Notícias -->
-  <section id="noticias" class="section">
-    <div class="container">
-      <h2>Últimas Notícias</h2>
-      <p><strong>Notícia 1:</strong> O impacto das mudanças climáticas na produção de grãos está se tornando cada vez mais evidente. A escassez de água e as temperaturas extremas têm afetado a produtividade das principais culturas em diversas regiões do mundo.</p>
-      <p><strong>Notícia 2:</strong> A utilização de pesticidas químicos no cultivo de grãos tem gerado intensos debates em torno da saúde pública e da sustentabilidade agrícola. Organizações ambientais estão pressionando por alternativas mais seguras e menos tóxicas.</p>
-      <p><strong>Notícia 3:</strong> Novas descobertas científicas revelam o potencial de plantas como alternativas naturais aos venenos químicos. Pesquisas sobre compostos naturais vêm crescendo, com destaque para soluções à base de plantas como controle de pragas.</p>
-    </div>
+  <!-- Seção Principal -->
+  <section>
+    <h2>Bem-vindo ao Raízes Urbana</h2>
+    <p>Raízes Urbana é um projeto dedicado a trazer a cultura e os valores urbanos para o centro das nossas vidas. Exploramos temas como sustentabilidade, inovação e comunidade, conectando as pessoas com suas raízes e o futuro das cidades.</p>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Informações sobre Grãos, Venenos e Notícias. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 Raízes Urbana. Todos os direitos reservados.</p>
   </footer>
 
 </body>
 </html>
+
 
