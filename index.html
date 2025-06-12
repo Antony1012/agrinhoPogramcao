@@ -16,22 +16,23 @@
     /* Corpo da página */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5; /* Cor de fundo clara */
-      color: #4e4e4e; /* Cor de texto neutra */
+      background-color: #f7f7f7; /* Fundo claro */
+      color: #444; /* Texto mais suave */
       line-height: 1.6;
     }
 
     /* Cabeçalho */
     header {
-      background-color: #8E7F6B; /* Marrom suave */
-      padding: 20px 0;
+      background-color: #A89F91; /* Tom de marrom suave */
+      padding: 40px 0;
       text-align: center;
       color: #fff;
     }
 
     header h1 {
-      font-size: 3em;
-      color: #6B8E23; /* Verde oliva */
+      font-size: 3.5em;
+      color: #3E4A34; /* Verde escuro suave */
+      letter-spacing: 2px;
     }
 
     /* Navegação */
@@ -47,93 +48,106 @@
     }
 
     nav ul li {
-      margin: 0 15px;
+      margin: 0 25px;
     }
 
     nav ul li a {
       text-decoration: none;
-      color: #6B8E23; /* Verde oliva */
+      color: #3E4A34; /* Verde suave */
       font-size: 1.2em;
       transition: color 0.3s ease;
     }
 
     nav ul li a:hover {
-      color: #8B4513; /* Marrom */
+      color: #7D5A3C; /* Marrom mais suave */
     }
 
     /* Seção principal */
     section {
-      padding: 50px 0;
-      background-color: #e0f2e9; /* Verde claro e suave */
+      padding: 60px 20px;
+      background-color: #F1F1F1; /* Fundo neutro claro */
       text-align: center;
     }
 
     section h2 {
       font-size: 2.5em;
-      color: #6B8E23;
+      color: #3E4A34;
       margin-bottom: 20px;
     }
 
     section p {
-      font-size: 1.2em;
-      color: #4e4e4e;
-      margin-bottom: 20px;
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Seção Sobre */
     #sobre {
-      background-color: #8E7F6B; /* Marrom suave */
-      padding: 50px 0;
-      color: #fff;
+      background-color: #E6E2D3; /* Tom de bege suave */
+      padding: 60px 20px;
+      color: #444;
     }
 
     #sobre h2 {
       font-size: 2.5em;
-      color: #fff;
+      color: #3E4A34;
       margin-bottom: 20px;
       text-align: center;
     }
 
     #sobre p {
       font-size: 1.2em;
-      color: #f5f5f5;
+      color: #666;
       text-align: justify;
       margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Seção Serviços */
     #servicos {
-      background-color: #e0f2e9; /* Verde claro */
-      padding: 50px 0;
+      padding: 60px 20px;
+      background-color: #F1F1F1; /* Fundo neutro claro */
     }
 
     #servicos h2 {
       font-size: 2.5em;
-      color: #6B8E23;
-      margin-bottom: 20px;
+      color: #3E4A34;
+      margin-bottom: 30px;
       text-align: center;
     }
 
     #servicos ul {
       list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
       padding: 0;
-      text-align: center;
     }
 
     #servicos ul li {
-      font-size: 1.2em;
-      color: #4e4e4e;
-      margin-bottom: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      font-size: 1.1em;
+      color: #444;
     }
 
     #servicos ul li span {
-      color: #8B4513; /* Marrom */
+      color: #7D5A3C; /* Marrom suave */
+      font-weight: bold;
     }
 
     /* Rodapé */
     footer {
-      background-color: #8E7F6B; /* Marrom suave */
-      padding: 15px 0;
+      background-color: #A89F91; /* Marrom suave */
+      padding: 25px 0;
       text-align: center;
       color: #fff;
     }
@@ -169,7 +183,7 @@
   <!-- Seção Sobre -->
   <section id="sobre">
     <h2>Sobre o Projeto</h2>
-    <p>O Raízes Urbana surgiu com a missão de explorar e promover iniciativas urbanas que conectam as pessoas às suas raízes culturais, ambientais e históricas. A nossa proposta é construir um espaço de reflexão, aprendizado e troca de ideias, com foco em soluções urbanas sustentáveis e inovadoras.</p>
+    <p>O Raízes Urbana surgiu com a missão de explorar e promover iniciativas urbanas que conectam as pessoas às suas raízes culturais, ambientais e históricas. Nossa proposta é construir um espaço de reflexão, aprendizado e troca de ideias, com foco em soluções urbanas sustentáveis e inovadoras.</p>
     <p>Nosso trabalho envolve, mas não se limita a, promover ações de preservação ambiental, urbanismo sustentável, arte e cultura urbana. Acreditamos que, ao fortalecer as raízes da cidade, conseguimos promover mudanças positivas e duradouras para a sociedade como um todo.</p>
   </section>
 
@@ -177,10 +191,22 @@
   <section id="servicos">
     <h2>Serviços</h2>
     <ul>
-      <li><span>Consultoria Ambiental:</span> Trabalhamos com planejamento urbano e soluções ecológicas para um futuro mais sustentável.</li>
-      <li><span>Eventos Culturais:</span> Organizamos eventos que valorizam a cultura urbana, arte de rua e o encontro de diferentes culturas locais.</li>
-      <li><span>Workshops e Palestras:</span> Oferecemos workshops sobre sustentabilidade, urbanismo e inovação para empresas e comunidades.</li>
-      <li><span>Projetos Comunitários:</span> Colaboramos com projetos sociais que promovem a inclusão e a integração social dentro das cidades.</li>
+      <li>
+        <span>Consultoria Ambiental:</span>
+        Trabalhamos com planejamento urbano e soluções ecológicas para um futuro mais sustentável.
+      </li>
+      <li>
+        <span>Eventos Culturais:</span>
+        Organizamos eventos que valorizam a cultura urbana, arte de rua e o encontro de diferentes culturas locais.
+      </li>
+      <li>
+        <span>Workshops e Palestras:</span>
+        Oferecemos workshops sobre sustentabilidade, urbanismo e inovação para empresas e comunidades.
+      </li>
+      <li>
+        <span>Projetos Comunitários:</span>
+        Colaboramos com projetos sociais que promovem a inclusão e a integração social dentro das cidades.
+      </li>
     </ul>
   </section>
 
@@ -191,5 +217,6 @@
 
 </body>
 </html>
+
 
 
