@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Raízes Urbana</title>
   <style>
-    /* Resetando margens e padding */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Corpo da página */
     body {
       font-family: 'Arial', sans-serif;
       background-color: #F1F1F1;
@@ -21,7 +18,6 @@
       line-height: 1.6;
     }
 
-    /* Cabeçalho */
     header {
       background-color: #6CCF97;
       padding: 40px 0;
@@ -33,7 +29,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 15px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
@@ -41,6 +37,7 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
+      object-fit: cover;
     }
 
     header h1 {
@@ -49,7 +46,6 @@
       letter-spacing: 2px;
     }
 
-    /* Navegação */
     nav {
       text-align: center;
       margin-top: 20px;
@@ -59,8 +55,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      margin: 0;
-      padding: 0;
+      flex-wrap: wrap;
     }
 
     nav ul li {
@@ -78,7 +73,6 @@
       color: #4CAF50;
     }
 
-    /* Seção Principal */
     section {
       padding: 60px 20px;
       background-color: #ffffff;
@@ -107,48 +101,17 @@
       margin-top: 20px;
     }
 
-    /* Seção Sobre */
     #sobre {
       background-color: #E5F4E3;
-      padding: 60px 20px;
       color: #333;
     }
 
-    #sobre h2 {
-      font-size: 2.5em;
-      color: #6CCF97;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
     #sobre p {
-      font-size: 1.2em;
-      color: #555;
       text-align: justify;
-      margin-bottom: 20px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
-    #sobre img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    /* Seção Serviços */
     #servicos {
-      padding: 60px 20px;
       background-color: #ffffff;
-    }
-
-    #servicos h2 {
-      font-size: 2.5em;
-      color: #6CCF97;
-      margin-bottom: 30px;
-      text-align: center;
     }
 
     #servicos ul {
@@ -172,16 +135,10 @@
     #servicos ul li span {
       color: #4CAF50;
       font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
     }
 
-    #servicos img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    /* Rodapé */
     footer {
       background-color: #6CCF97;
       padding: 25px 0;
@@ -193,13 +150,12 @@
       font-size: 1em;
     }
 
-    /* Responsividade */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2.5em;
       }
 
-      section h2, #sobre h2, #servicos h2 {
+      section h2 {
         font-size: 2em;
       }
 
@@ -212,7 +168,7 @@
         grid-template-columns: 1fr;
       }
 
-      #sobre p, section p {
+      section p {
         font-size: 1.1em;
         padding: 0 20px;
       }
@@ -228,9 +184,9 @@
   <!-- Cabeçalho -->
   <header>
     <div class="logo-container">
-      <img src="https://via.placeholder.com/60x60/ffffff/6CCF97?text=🚜" alt="Ícone de Trator">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Tractor_in_field.jpg/120px-Tractor_in_field.jpg" alt="Trator">
       <h1>Raízes Urbana</h1>
-      <img src="https://via.placeholder.com/60x60/ffffff/6CCF97?text=🚜" alt="Ícone de Trator">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Tractor_in_field.jpg/120px-Tractor_in_field.jpg" alt="Trator">
     </div>
   </header>
 
@@ -247,8 +203,8 @@
   <!-- Seção Principal -->
   <section>
     <h2>Bem-vindo ao Raízes Urbana</h2>
-    <p>Raízes Urbana é um projeto dedicado a promover a conexão entre a cultura urbana, o meio ambiente e a sustentabilidade. Acreditamos que, nas cidades, as raízes que nos conectam ao nosso entorno precisam ser valorizadas e preservadas, para criar comunidades mais fortes, conscientes e inovadoras.</p>
-    <img src="https://via.placeholder.com/1200x600/6CCF97/ffffff?text=Imagem+de+Trator" alt="Trator em um campo urbano">
+    <p>Raízes Urbana é um projeto dedicado a promover a conexão entre a cultura urbana, o meio ambiente e a sustentabilidade. Acreditamos que, nas cidades, as raízes que nos conectam ao nosso entorno precisam ser valorizadas e preservadas.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Tractor_ploughing_field.jpg" alt="Trator trabalhando">
   </section>
 
   <!-- Seção Sobre -->
@@ -256,7 +212,7 @@
     <h2>Sobre o Projeto</h2>
     <p>O Raízes Urbana surgiu com a missão de explorar e promover iniciativas urbanas que conectam as pessoas às suas raízes culturais, ambientais e históricas. Nossa proposta é construir um espaço de reflexão, aprendizado e troca de ideias, com foco em soluções urbanas sustentáveis e inovadoras.</p>
     <p>Nosso trabalho envolve, mas não se limita a, promover ações de preservação ambiental, urbanismo sustentável, arte e cultura urbana. Acreditamos que, ao fortalecer as raízes da cidade, conseguimos promover mudanças positivas e duradouras para a sociedade como um todo.</p>
-    <img src="https://via.placeholder.com/1200x600/6CCF97/ffffff?text=Imagem+de+Trator+na+Cidade" alt="Trator trabalhando em área urbana">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Urban_farming.jpg" alt="Trator em ambiente urbano">
   </section>
 
   <!-- Seção Serviços -->
@@ -266,22 +222,22 @@
       <li>
         <span>Consultoria Ambiental:</span>
         Trabalhamos com planejamento urbano e soluções ecológicas para um futuro mais sustentável.
-        <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Consultoria+Ambiental+e+Trator" alt="Trator em projeto ambiental">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Agroecology_training.jpg" alt="Trator em projeto ambiental">
       </li>
       <li>
         <span>Eventos Culturais:</span>
         Organizamos eventos que valorizam a cultura urbana, arte de rua e o encontro de diferentes culturas locais.
-        <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Eventos+Culturais+Com+Trator" alt="Eventos culturais na cidade">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Community_garden_event.jpg" alt="Evento urbano cultural">
       </li>
       <li>
         <span>Workshops e Palestras:</span>
         Oferecemos workshops sobre sustentabilidade, urbanismo e inovação para empresas e comunidades.
-        <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Workshops+Urbanos+Com+Trator" alt="Workshop sobre urbanismo com trator">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Community_Workshop.jpg" alt="Workshop sobre urbanismo">
       </li>
       <li>
         <span>Projetos Comunitários:</span>
         Colaboramos com projetos sociais que promovem a inclusão e a integração social dentro das cidades.
-        <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Projetos+Comunitarios+Com+Trator" alt="Trator em projetos comunitários">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Urban_community_project.jpg" alt="Projeto comunitário urbano">
       </li>
     </ul>
   </section>
@@ -293,6 +249,7 @@
 
 </body>
 </html>
+
 
 
 
