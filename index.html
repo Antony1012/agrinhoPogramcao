@@ -16,17 +16,31 @@
     /* Corpo da página */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #F1F1F1; /* Fundo claro e suave */
-      color: #333; /* Texto em cinza escuro */
+      background-color: #F1F1F1;
+      color: #333;
       line-height: 1.6;
     }
 
     /* Cabeçalho */
     header {
-      background-color: #6CCF97; /* Verde suave */
+      background-color: #6CCF97;
       padding: 40px 0;
       text-align: center;
       color: #fff;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo-container img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
     }
 
     header h1 {
@@ -61,7 +75,7 @@
     }
 
     nav ul li a:hover {
-      color: #4CAF50; /* Verde mais forte */
+      color: #4CAF50;
     }
 
     /* Seção Principal */
@@ -202,6 +216,10 @@
         font-size: 1.1em;
         padding: 0 20px;
       }
+
+      .logo-container {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -209,7 +227,11 @@
 
   <!-- Cabeçalho -->
   <header>
-    <h1>Raízes Urbana</h1>
+    <div class="logo-container">
+      <img src="https://via.placeholder.com/60x60/ffffff/6CCF97?text=🚜" alt="Ícone de Trator">
+      <h1>Raízes Urbana</h1>
+      <img src="https://via.placeholder.com/60x60/ffffff/6CCF97?text=🚜" alt="Ícone de Trator">
+    </div>
   </header>
 
   <!-- Navegação -->
@@ -226,7 +248,6 @@
   <section>
     <h2>Bem-vindo ao Raízes Urbana</h2>
     <p>Raízes Urbana é um projeto dedicado a promover a conexão entre a cultura urbana, o meio ambiente e a sustentabilidade. Acreditamos que, nas cidades, as raízes que nos conectam ao nosso entorno precisam ser valorizadas e preservadas, para criar comunidades mais fortes, conscientes e inovadoras.</p>
-    <!-- Imagem de trator -->
     <img src="https://via.placeholder.com/1200x600/6CCF97/ffffff?text=Imagem+de+Trator" alt="Trator em um campo urbano">
   </section>
 
@@ -235,7 +256,6 @@
     <h2>Sobre o Projeto</h2>
     <p>O Raízes Urbana surgiu com a missão de explorar e promover iniciativas urbanas que conectam as pessoas às suas raízes culturais, ambientais e históricas. Nossa proposta é construir um espaço de reflexão, aprendizado e troca de ideias, com foco em soluções urbanas sustentáveis e inovadoras.</p>
     <p>Nosso trabalho envolve, mas não se limita a, promover ações de preservação ambiental, urbanismo sustentável, arte e cultura urbana. Acreditamos que, ao fortalecer as raízes da cidade, conseguimos promover mudanças positivas e duradouras para a sociedade como um todo.</p>
-    <!-- Imagem de trator -->
     <img src="https://via.placeholder.com/1200x600/6CCF97/ffffff?text=Imagem+de+Trator+na+Cidade" alt="Trator trabalhando em área urbana">
   </section>
 
@@ -246,25 +266,21 @@
       <li>
         <span>Consultoria Ambiental:</span>
         Trabalhamos com planejamento urbano e soluções ecológicas para um futuro mais sustentável.
-        <!-- Imagem de trator -->
         <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Consultoria+Ambiental+e+Trator" alt="Trator em projeto ambiental">
       </li>
       <li>
         <span>Eventos Culturais:</span>
         Organizamos eventos que valorizam a cultura urbana, arte de rua e o encontro de diferentes culturas locais.
-        <!-- Imagem de trator -->
         <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Eventos+Culturais+Com+Trator" alt="Eventos culturais na cidade">
       </li>
       <li>
         <span>Workshops e Palestras:</span>
         Oferecemos workshops sobre sustentabilidade, urbanismo e inovação para empresas e comunidades.
-        <!-- Imagem de trator -->
         <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Workshops+Urbanos+Com+Trator" alt="Workshop sobre urbanismo com trator">
       </li>
       <li>
         <span>Projetos Comunitários:</span>
         Colaboramos com projetos sociais que promovem a inclusão e a integração social dentro das cidades.
-        <!-- Imagem de trator -->
         <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Projetos+Comunitarios+Com+Trator" alt="Trator em projetos comunitários">
       </li>
     </ul>
@@ -277,6 +293,7 @@
 
 </body>
 </html>
+
 
 
 
